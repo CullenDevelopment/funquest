@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="A suite of four fun games comprising tic-tac-toe, otherwise known as 
+noughts and crosses, a Dragon Game, Hangman and Silly Sentences.">
+<meta name="keywords" content="hangman, tic-tac-toe, Dragon Game, noughts and crosses, 
+game, fun, simple, challenge, all ages, game, word guessing, puzzle, strategy game, choice game, fantasy journey, 
+adventure game, sentence generator, wacky sentences, word mystery, games, play, letter puzzle, hidden word, word challenge, 
+spelling game, letter guess, word mystery, hangman classic, cave adventure, dragon encounter, decision game, random words,
+funny phrases, word play, word combination, language fun,  ">
+<meta name="robots" content="index, follow">
+<meta name="copyright" content="Cullen Development">
+<meta name="author" content="John Paul Cullen">
+<meta name="creationdate" content="27th August 2024">
+<meta name="distribution" content="global">
+<meta name="rating" content="general">
+
+
+<link rel="shortcut icon" href="CullenDevIcon.ico">
+
+<link rel="stylesheet" href="funquest.css" type="text/css">
+
+<title>FunQuest</title>
+
+
+</head>
+
+<body>
+<header>Fun Quest</header>
+
+</div>
+
+<div class="flex-container">
+
+
+
+<div class="left">
+<h3>Tic-Tac-Toe</h3>
+
+<button class="start" id="ttt-start" >Start</button>
+<fieldset>
+<legend>Do you want to be 'X' or '0'?</legend>
+X <input type="radio"
+    name="Choice" id="radio-x" value="X">
+O <input type="radio"
+    name="Choice" id="radio-y" value="O">
+</fieldset>
+
+
+
+<div class="board" onClick="handleCellClick(event)">
+  <div class="cell" data-index="0" id="cell0"></div>
+  <div class="cell" data-index="1" id="cell1"></div>
+  <div class="cell" data-index="2" id="cell2"></div>
+  <div class="cell" data-index="3" id="cell3"></div>
+  <div class="cell" data-index="4" id="cell4"></div>
+  <div class="cell" data-index="5" id="cell5"></div>
+  <div class="cell" data-index="6" id="cell6"></div>
+  <div class="cell" data-index="7" id="cell7"></div>
+  <div class="cell" data-index="8" id="cell8"></div>
+</div>
+
+
+<div class="outer centered"><div class="inner", id='ttt-messages',>Messages</div></div>
+
+</div>
+
+    
+
+
+<div class="inner-left">
+<h3>Dragon Game</h3>
+<p class="dragon">You are in a land full of Dragons.<br>In front of you there are
+two caves.<br>In one, the resident is friendly and will share treasure 
+with you. The other there is a Dragon who will eat you on sight.<br>Which cave will you choose: 1 or 2?</p>
+
+<button class="start", id="dragonStart1">One</button>
+<button class="start", id="dragonStart2">Two</button>
+	
+<div class="outer centered"><div class="inner" id="dragonMessages">Messages</div></div>
+
+<p class="dragon">If the result hasn't changed, <br>you have met the same person again<br>
+and your points have been counted.</p>
+
+<button class="start", id="dragonRefresh">Refresh</button>
+
+
+
+</div>
+
+
+
+
+<div class="inner-right">
+<h3>Hang-Man</h3>
+
+<button class="start", id="hangmanStart">Start</button>
+	
+<div class="gallowsContainer">
+    <img src="gallowsSmall.png" id= "gallowsPic" alt="gallows">
+    <div class="overlay">
+        <div class="headImage">
+            <img src="skeleton-head.png" alt="Bonehead" id="head">
+        </div>
+        <div class="armsTorso">
+            <img src="skel-right-arm.png" id="right-arm-image" alt ="BoneRtArm">
+            <img src="skel-torso.png" alt="Bonebody" id="torso-image" alt="skel-torso">
+            <img src="skel-left-arm.png" alt="BoneLtArm" id="left-arm-image" alt="skel-left-arm">       
+        </div>
+        <div class="legs">
+            <img src="skel-right-leg.png" alt="BoneRtLeg" id="right-leg-image">
+            <img src="skel-left-leg.png" alt="BoneLtLeg" id="left-leg-image">
+        </div>
+    </div>
+</div>
+
+
+<div class="hangmanRadioSet">
+    
+    <fieldset>
+        <legend>Click to choose theme.</legend>
+        Animal <input type="radio" name="choose" id="radio-animal" value="Animal" checked="false">
+        Vegetable <input type="radio" name="choose" id="radio-vegetable" value="Vegetable"checked="false" >   
+        Mineral <input type="radio" name="choose" id="radio-mineral" value="Mineral"checked="false" >   
+    </fieldset>
+    
+</div>
+
+<div class="hangmanContainer" >
+    <input type="text" class="hangmanInput"id="letterInput" value = ' ';/>
+    <button value="Save"class="guess" id="guess">Guess</button>
+</div>
+
+<div class="outerHangman centered"><div class="innerHangman", id='showLetters',>Messages</div></div>
+      
+
+<div class="outerHangman2 centered"><div class="innerHangman", id='hangmanMessages',>Messages</div></div>
+</div>
+
+<div class="right">
+<h3>Silly Sentences</h3>
+
+<button class="start", id="sentencesStart">Start</button>
+
+<p class="silly">Please enter up to six names.</p>
+
+
+<div class="namesContainer" >
+    <input type="text" class="sentenceInput"id="nameInput" value = ' ';/>
+    <button value="Save"class="guess" id="names">Enter</button>
+</div>
+
+<button class = "go", id="startGo">Go!</button>
+	
+<div class="outer centered"><div class="inner", id="sentencesMessage">Messages</div>
+<button class="refresh", id="sentenceRefresh">Refresh</button>
+</div>
+</div>
+
+
+
+</div>
+
+
+
+<script  src='tictactoe.js'></script>   
+
+<script src='dragons.js'></script> 
+
+
+<script src='hangman.js'></script>
+
+<script src='sillySentences.js'></script>
+   
+
+    
+
+    </body>
+
+    
+
+</html>

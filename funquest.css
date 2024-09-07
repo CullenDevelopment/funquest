@@ -1,0 +1,251 @@
+* {margin : 0px ;box-sizing : border-box ; }
+
+body { background : DodgerBlue ; }
+
+
+
+
+header { border:5px solid Tomato; text-align : center ;  background : Blue ; 
+font : bold 8vh  "Lucida Handwriting", cursive; text-align : center ; color : Gold ; margin:0 ; padding: 0 ; box-sizing : border-box ; }
+
+
+div.flex-container{
+   margin : 0 0 0 25px ;
+   display : flex;
+   flex-wrap : wrap ;
+   border : 2px dashed RoyalBlue ;
+   width : 97vw ;
+   height : 800px ;
+   justify-content : space-between ;
+   align-items : center ;
+}
+
+div.flex-container > div {
+    
+	width : 350px ;
+	height : 785px ;
+	background : Blue ;
+	border : 4px solid Gold ;
+	font : bold 3vh  "Lucida Handwriting", cursive; text-align : center ; color : Gold ; 
+	 }
+legend	 { font : bold 2vh  "Lucida Handwriting", cursive; text-align : center ; color : Gold ; }
+
+.board {
+      display: grid;
+      grid-template-columns: repeat(3, 98px);
+      grid-gap: 5px;
+      margin-top: 20px;
+      margin : 20px 0 0 20px ; 
+      width :300px ; 
+      height : 300px ; 
+      border : 3px solid RoyalBlue ;
+    }
+
+    .cell {
+      width: 87px;
+      height: 93px;
+      font-size: 24px;
+      border: 2px solid white;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+      text-align:center;
+      vertical-align: middle;
+      line-height: 40 px;
+      padding-top: 30%;
+    }
+
+
+div.outer, div.inner { width : 300px ; height : 85px ; font : bold 1.8vh  "Lucida Handwriting", cursive; 
+ color : Black ; padding : 10px;}
+
+
+
+div.outerHangman, div.innerHangman { width : 200px ; height : 50px ; font : bold 1.8vh  "Lucida Handwriting", cursive; 
+ color : Black ;padding:5px}
+
+div.outerHangman2, div.innerHangman2 { width : 200px ; height : 80px ; font : bold 1.8vh  "Lucida Handwriting", cursive; 
+ color : Black ; padding:5px;}
+
+div.outer { display : inline-block ; margin : 10px 20px 5px 20px ; border : 5px solid Tomato ;
+    background : MistyRose ; border-radius : 40px ; }
+
+
+div.outerHangman { display : inline-block ; margin : 5px 20px 5px 20px ; border : 5px solid Tomato ;
+    background : MistyRose ; border-radius : 40px ; }
+
+div.outerHangman2 { display : inline-block ; margin : 5px 20px 5px 20px ; border : 5px solid Tomato ;
+    background : MistyRose ; border-radius : 40px ; }
+
+
+div.inner { display : table-cell ; text-align : center ;  }
+
+
+div.innerHangman { display : table-cell ; text-align : center ; vertical-align : center ;}
+
+.container {
+    position: relative;
+    border: 2px;
+    height:40px;
+    overflow: hidden;
+    margin-bottom:10px;
+}
+
+.hangmanContainer {
+    position: relative;
+    border: 2px;
+    height:50px;
+    overflow: hidden;
+    margin-bottom:5px;
+    margin-top: 10px
+}
+
+.namesContainer {
+    position: relative;
+    border: 2px;
+    height:50px;
+    overflow: hidden;
+    margin-bottom:20px;
+    margin-top: 20px
+}
+
+
+
+
+
+.start { display : inline-block ; width : 100px ; Height : 50px ;font : bold 2vh  "Lucida Handwriting", cursive; 
+ color : Blue ; padding : 10px ; margin : 10px ; background : Yellow ; text-align : center ; 
+  border : 2px solid Red ; cursor : pointer ; }
+
+.refresh { display : inline-block ; width : 110px ; Height : 50px ;font : bold 2vh  "Lucida Handwriting", cursive; 
+ color : Blue ; padding : 10px ; margin : 20px ; background : Yellow ; text-align : center ; 
+  border : 2px solid Red ; cursor : pointer ; }
+
+.theme { display : inline-block ; width : 100px ; Height : 40px ;font : bold 2vh  "Lucida Handwriting", cursive; 
+ color : Blue ;  background : Yellow ; text-align : center ; 
+  border : 2px solid Red ; cursor : pointer ;}
+
+.guess { display : inline-block ; width : 70px ; Height : 40px ;font : bold 1.8vh  "Lucida Handwriting", cursive; 
+ color : Blue ; background : Yellow ; text-align : center ; 
+  border : 2px solid Red ; cursor : pointer ; }
+  
+.score { display : inline-block ; width : 100px ; Height : 50px ;font : bold 2vh  "Lucida Handwriting", cursive; 
+ color : Blue ; padding : 10px ; margin :10px ; background : Yellow ; text-align : center ; 
+  border : 2px solid Red ; cursor : pointer ; }
+
+.letterInput { width :40px; height: 35px; margin-left: 20px; border : 2px solid red ; background: white; font :100
+    1.8vh "Lucida Handwriting", cursive; color: black; text-align: center
+}
+
+.hangmanInput { width :40px; height: 40px; margin-left: 20px; border : 2px solid red ; background: white; font :100
+    1.8vh "Lucida Handwriting", cursive; color: black; text-align: center
+}
+
+.sentenceInput { width :160px; height: 40px; margin-left: 20px; border : 2px solid red ; background: white; font :100
+    1.8vh "Lucida Handwriting", cursive; color: black; text-align: center
+}
+.gallowsContainer {
+    position :relative;
+    display :block;
+    margin-left: 130px;
+    margin-right: 90px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width : 125px;
+    height:250px;
+}
+#gallowsPic {
+    width :100%;
+    height: 100%;
+    
+
+}
+#head {
+    position:absolute;
+    top: 50px;
+    left: 5px;
+    width:40px;
+    height:40px;
+    visibility: hidden;
+    
+    
+}
+#right-arm-image {
+    position: absolute;
+    top: 85px;
+    left: -15px;
+    width: 30px;
+    height: 70px;
+    visibility: hidden;
+    
+
+}
+#torso-image {
+    position: absolute;
+    top: 85px;
+    left: 10px;
+    width: 30px;
+    height: 70px;
+    visibility: hidden;
+}
+    
+#left-arm-image {
+    position: absolute;
+    top: 85px;
+    left: 40px;
+    width: 30px;
+    height: 70px;
+    visibility: hidden;
+    
+}
+#right-leg-image {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    width: 30px;
+    height: 70px;
+    visibility: hidden;
+    
+}
+#left-leg-image {
+    position: absolute;
+    top: 150px;
+    left: 22px;
+    width: 30px;
+    height: 70px;
+    visibility: hidden;
+    
+}
+  
+p.dragon {margin : 5px 5px;  font : bold 2vh  "Lucida Handwriting", cursive; text-align : center ; color : Gold ; } 
+
+p.hangman {margin : 5px 5px;  font : bold 2vh  "Lucida Handwriting", cursive; text-align : center ; color : Gold ; }
+
+p.silly {margin : 5px 5px;  font : bold 2vh  "Lucida Handwriting", cursive; text-align : center ; color : Gold ; } 
+
+.go { display : inline-block ; width : 100px ; Height : 50px ;font : bold 2vh  "Lucida Handwriting", cursive; 
+ color : Blue ; padding : 10px ; margin : 10px ; background : Yellow ; text-align : center ; 
+  border : 2px solid Red ; cursor : pointer ; }
+  
+div.outside, div.inside { width : 200px ; height : 75px ; font : bold 2vh  "Lucida Handwriting", cursive; 
+ color : Blue ; padding : 10px }
+
+div.outside{ display : inline-block ; margin : 30px 20px 20px 20px ; border : 5px solid Tomato ;
+    background : Yellow ; }
+	
+div.inside { display : table-cell ; text-align : center ; vertical-align : center ; }
+
+div.outside { border-radius : 40px ;  }
+
+div.names { width : 250px ; height : 40px ; margin : 50px ;border : 2px solid red ; background : White ; }
+
+.letters { width : 180px ; height : 40px ; margin-left : 20px ;padding-bottom:10px;border : 2px solid red ; background : White ;
+font: bold 1.8vh "Lucida Handwriting", cursive; color:black; text-align:center; vertical-align : center ;}
+
+.hangmanRadioSet {font : bold 2vh  "Lucida Handwriting", cursive; text-align : center ; color : Gold ;}
+
+
+ 
+
+
+label.hangman { font :200  2vh  "Lucida Handwriting", cursive; 
+ color : Gold ;  }
