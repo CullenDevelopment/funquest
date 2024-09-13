@@ -3,7 +3,7 @@
 let guessButton = document.querySelector('#guess').addEventListener('click', letterGuess);
 
 
-let hangmanStart = document.querySelector('#hangmanStart').addEventListener('click', hangmanEvent);
+let hangmanRefresh = document.querySelector('#hangmanRefresh').addEventListener('click', hangmanEvent);
 
 
 let randomAnimalWord = [];
@@ -122,7 +122,7 @@ function mineralEvent(){
     hangMessages.textContent = ' ';
 };
 
- function buildSkeleton(){
+function buildSkeleton(){
     //reveal skeleton with wrong answers
      if(attempts == 1){
     head.style.visibility = "visible";

@@ -6,14 +6,13 @@ body { background : DodgerBlue ; }
 
 
 header { border:5px solid Tomato; text-align : center ;  background : Blue ; 
-font : bold 8vh  "Lucida Handwriting", cursive; text-align : center ; color : Gold ; margin:0 ; padding: 0 ; box-sizing : border-box ; }
+font : bold 8vh  "Comic Sans", sans-serif; text-align : center ; color : Gold ; margin:0 ; padding: 0 ; box-sizing : border-box ; }
 
 
 div.flex-container{
    margin : 0 0 0 25px ;
    display : flex;
    flex-wrap : wrap ;
-   border : 2px dashed RoyalBlue ;
    width : 97vw ;
    height : 800px ;
    justify-content : space-between ;
@@ -26,9 +25,9 @@ div.flex-container > div {
 	height : 785px ;
 	background : Blue ;
 	border : 4px solid Gold ;
-	font : bold 3vh  "Lucida Handwriting", cursive; text-align : center ; color : Gold ; 
+	font : bold 3vh  "Comic Sans", sans-serif; text-align : center ; color : Gold ; 
 	 }
-legend	 { font : bold 2vh  "Lucida Handwriting", cursive; text-align : center ; color : Gold ; }
+legend	 { font : bold 2vh  "Comic Sans", sans-serif; text-align : center ; color : Gold ; }
 
 .board {
       display: grid;
@@ -55,18 +54,22 @@ legend	 { font : bold 2vh  "Lucida Handwriting", cursive; text-align : center ; 
     }
 
 
-div.outer, div.inner { width : 300px ; height : 85px ; font : bold 1.8vh  "Lucida Handwriting", cursive; 
+div.outer, div.inner { width : 300px ; height : 85px ; font : bold 1.8vh  "Comic Sans", sans-serif; 
  color : Black ; padding : 10px;}
 
+div.outer2, div.inner2 { width : 310px ; height : 100px ; font : bold 1.8vh  "Comic Sans", sans-serif; 
+ color : Black ; padding : 10px;}
 
-
-div.outerHangman, div.innerHangman { width : 200px ; height : 50px ; font : bold 1.8vh  "Lucida Handwriting", cursive; 
+div.outerHangman, div.innerHangman { width : 300px ; height : 50px ; font : bold 1.8vh  "Comic Sans", sans-serif; 
  color : Black ;padding:5px}
 
-div.outerHangman2, div.innerHangman2 { width : 200px ; height : 80px ; font : bold 1.8vh  "Lucida Handwriting", cursive; 
+div.outerHangman2, div.innerHangman2 { width : 300px ; height : 80px ; font : bold 1.8vh  "Comic Sans", sans-serif; 
  color : Black ; padding:5px;}
 
 div.outer { display : inline-block ; margin : 10px 20px 5px 20px ; border : 5px solid Tomato ;
+    background : MistyRose ; border-radius : 40px ; }
+
+div.outer2 { display : inline-block ; margin : 10px 10px 10px 10px ; border : 5px solid Tomato ;
     background : MistyRose ; border-radius : 40px ; }
 
 
@@ -78,6 +81,8 @@ div.outerHangman2 { display : inline-block ; margin : 5px 20px 5px 20px ; border
 
 
 div.inner { display : table-cell ; text-align : center ;  }
+
+div.inner2 { display : table-cell ; text-align : center ;  }
 
 
 div.innerHangman { display : table-cell ; text-align : center ; vertical-align : center ;}
@@ -112,36 +117,36 @@ div.innerHangman { display : table-cell ; text-align : center ; vertical-align :
 
 
 
-.start { display : inline-block ; width : 100px ; Height : 50px ;font : bold 2vh  "Lucida Handwriting", cursive; 
+.start { display : inline-block ; width : 100px ; Height : 50px ;font : bold 2vh  "Comic Sans", sans-serif; 
  color : Blue ; padding : 10px ; margin : 10px ; background : Yellow ; text-align : center ; 
   border : 2px solid Red ; cursor : pointer ; }
 
-.refresh { display : inline-block ; width : 110px ; Height : 50px ;font : bold 2vh  "Lucida Handwriting", cursive; 
+.refresh { display : inline-block ; width : 110px ; Height : 50px ;font : bold 2vh  "Comic Sans", sans-serif; 
  color : Blue ; padding : 10px ; margin : 20px ; background : Yellow ; text-align : center ; 
   border : 2px solid Red ; cursor : pointer ; }
 
-.theme { display : inline-block ; width : 100px ; Height : 40px ;font : bold 2vh  "Lucida Handwriting", cursive; 
+.theme { display : inline-block ; width : 100px ; Height : 40px ;font : bold 2vh  "Comic Sans", sans-serif; 
  color : Blue ;  background : Yellow ; text-align : center ; 
   border : 2px solid Red ; cursor : pointer ;}
 
-.guess { display : inline-block ; width : 70px ; Height : 40px ;font : bold 1.8vh  "Lucida Handwriting", cursive; 
+.guess { display : inline-block ; width : 100px ; Height : 40px ;font : bold 1.8vh  "Comic Sans", sans-serif; 
  color : Blue ; background : Yellow ; text-align : center ; 
   border : 2px solid Red ; cursor : pointer ; }
   
-.score { display : inline-block ; width : 100px ; Height : 50px ;font : bold 2vh  "Lucida Handwriting", cursive; 
+.score { display : inline-block ; width : 100px ; Height : 50px ;font : bold 2vh  "Comic Sans", sans-serif; 
  color : Blue ; padding : 10px ; margin :10px ; background : Yellow ; text-align : center ; 
   border : 2px solid Red ; cursor : pointer ; }
 
 .letterInput { width :40px; height: 35px; margin-left: 20px; border : 2px solid red ; background: white; font :100
-    1.8vh "Lucida Handwriting", cursive; color: black; text-align: center
+   bold 1.8vh "Comic Sans", sans-serif; color: black; text-align: center
 }
 
 .hangmanInput { width :40px; height: 40px; margin-left: 20px; border : 2px solid red ; background: white; font :100
-    1.8vh "Lucida Handwriting", cursive; color: black; text-align: center
+   bold 2.0vh "Comic Sans", sans-serif; color: black; text-align: center
 }
 
 .sentenceInput { width :160px; height: 40px; margin-left: 20px; border : 2px solid red ; background: white; font :100
-    1.8vh "Lucida Handwriting", cursive; color: black; text-align: center
+   bold 1.8vh "Comic Sans", sans-serif; color: black; text-align: center
 }
 .gallowsContainer {
     position :relative;
@@ -216,17 +221,17 @@ div.innerHangman { display : table-cell ; text-align : center ; vertical-align :
     
 }
   
-p.dragon {margin : 5px 5px;  font : bold 2vh  "Lucida Handwriting", cursive; text-align : center ; color : Gold ; } 
+p.dragon {margin : 5px 5px;  font : bold 2vh  "Comic Sans", sans-serif; text-align : center ; color : Gold ; } 
 
-p.hangman {margin : 5px 5px;  font : bold 2vh  "Lucida Handwriting", cursive; text-align : center ; color : Gold ; }
+p.hangman {margin : 5px 5px;  font : bold 2vh  "Comic Sans", sans-serif; text-align : center ; color : Gold ; }
 
-p.silly {margin : 5px 5px;  font : bold 2vh  "Lucida Handwriting", cursive; text-align : center ; color : Gold ; } 
+p.silly {margin : 5px 5px;  font : bold 2vh  "Comic Sans", sans-serif; text-align : center ; color : Gold ; } 
 
-.go { display : inline-block ; width : 100px ; Height : 50px ;font : bold 2vh  "Lucida Handwriting", cursive; 
+.go { display : inline-block ; width : 100px ; Height : 50px ;font : bold 2vh  "Comic Sans", sans-serif; 
  color : Blue ; padding : 10px ; margin : 10px ; background : Yellow ; text-align : center ; 
   border : 2px solid Red ; cursor : pointer ; }
   
-div.outside, div.inside { width : 200px ; height : 75px ; font : bold 2vh  "Lucida Handwriting", cursive; 
+div.outside, div.inside { width : 200px ; height : 75px ; font : bold 2vh  "Comic Sans", sans-serif; 
  color : Blue ; padding : 10px }
 
 div.outside{ display : inline-block ; margin : 30px 20px 20px 20px ; border : 5px solid Tomato ;
@@ -239,13 +244,13 @@ div.outside { border-radius : 40px ;  }
 div.names { width : 250px ; height : 40px ; margin : 50px ;border : 2px solid red ; background : White ; }
 
 .letters { width : 180px ; height : 40px ; margin-left : 20px ;padding-bottom:10px;border : 2px solid red ; background : White ;
-font: bold 1.8vh "Lucida Handwriting", cursive; color:black; text-align:center; vertical-align : center ;}
+font: bold 1.8vh "Comic Sans", sans-serif; color:black; text-align:center; vertical-align : center ;}
 
-.hangmanRadioSet {font : bold 2vh  "Lucida Handwriting", cursive; text-align : center ; color : Gold ;}
+.hangmanRadioSet {font : bold 2vh  "Comic Sans", sans-serif; text-align : center ; color : Gold ;}
 
 
  
 
 
-label.hangman { font :200  2vh  "Lucida Handwriting", cursive; 
+label.hangman { font :200  2vh  "Comic Sans", sans-serif; 
  color : Gold ;  }

@@ -46,7 +46,7 @@ funny phrases, word play, word combination, language fun,  ">
 <div class="left">
 <h3>Tic-Tac-Toe</h3>
 
-<button class="start" id="ttt-start" >Start</button>
+
 <fieldset>
 <legend>Do you want to be 'X' or '0'?</legend>
 X <input type="radio"
@@ -71,6 +71,8 @@ O <input type="radio"
 
 
 <div class="outer centered"><div class="inner", id='ttt-messages',>Messages</div></div>
+
+<button class="start" id="ttt-start" >Reset</button>
 
 </div>
 
@@ -103,7 +105,7 @@ and your points have been counted.</p>
 <div class="inner-right">
 <h3>Hang-Man</h3>
 
-<button class="start", id="hangmanStart">Start</button>
+
 	
 <div class="gallowsContainer">
     <img src="gallowsSmall.png" id= "gallowsPic" alt="gallows">
@@ -144,14 +146,17 @@ and your points have been counted.</p>
       
 
 <div class="outerHangman2 centered"><div class="innerHangman", id='hangmanMessages',>Messages</div></div>
+
+<button class="start", id="hangmanRefresh">Refresh</button>
+
 </div>
 
 <div class="right">
 <h3>Silly Sentences</h3>
 
-<button class="start", id="sentencesStart">Start</button>
-
 <p class="silly">Please enter up to six names.</p>
+
+<p class="silly">For each name, enter name and press 'Enter'</p>
 
 
 <div class="namesContainer" >
@@ -159,11 +164,16 @@ and your points have been counted.</p>
     <button value="Save"class="guess" id="names">Enter</button>
 </div>
 
+<p class="silly">Once you have entered all of your names, press 'Go!' to create a silly sentence 
+    with each press</p>
+
+
 <button class = "go", id="startGo">Go!</button>
 	
-<div class="outer centered"><div class="inner", id="sentencesMessage">Messages</div>
-<button class="refresh", id="sentenceRefresh">Refresh</button>
+<div class="outer2 centered"><div class="inner2", id="sentencesMessage">Messages</div>
+
 </div>
+<button class="refresh", id="sentenceRefresh">Refresh</button>
 </div>
 
 

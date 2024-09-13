@@ -181,7 +181,8 @@ function resetTTT(){
     cell6.textContent = ' ';
     cell7.textContent = ' ';
     cell8.textContent = ' ';
-    }
+	ticTacToeMessage.textContent = 'Choose X or O';
+	}
 
 
 
@@ -194,8 +195,6 @@ let rand = Math.ceil(Math.random()* 10);
     
     }
     else{
-    //ticTacToeGame goes first - message (ttt-message)
-    ticTacToeMessage.textContent = "Game goes first";
     gamePlay();
     }
 }
@@ -207,11 +206,7 @@ let rand = Math.ceil(Math.random()* 10);
 const radio1 = document.querySelector('#radio-x');
 const radio2 = document.querySelector('#radio-y');
 const tttStart  = document.querySelector('#ttt-start').addEventListener('click', (event => {
-    ticTacToeMessage.textContent = "Choose 'X' or 'O'";
     resetTTT();
-    
-    
-    
 }));
 
 
@@ -219,7 +214,7 @@ const tttStart  = document.querySelector('#ttt-start').addEventListener('click',
 radio1.addEventListener('click', (event => {
     ticTacToePlayer = "X";
     ticTacToeGame = "O";
-    goesFirst();
+	goesFirst();
     
 }));
 radio2.addEventListener('click', (event => {

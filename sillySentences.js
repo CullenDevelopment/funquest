@@ -1,5 +1,4 @@
 //Silly Sentences Game.
-let startButton = document.querySelector('#sentencesStart').addEventListener('click', sentenceStart);
 let goButton = document.querySelector("#startGo").addEventListener('click', go);
 let namesButton = document.querySelector("#names").addEventListener('click', getNames);
 let sillyMessages = document.querySelector('#sentencesMessage');
@@ -56,17 +55,11 @@ const nouns = [" lion"," bicycle","n aeroplane"," fridge"," walrus", " football"
 
 let sentenceRefresh = document.querySelector('#sentenceRefresh').addEventListener('click', sentenceRefreshEvent);
 
-function sentenceStart(){
-    sillyMessages.textContent = "For each name, enter name and press 'Enter', then press 'Go!'";
-}
-
-
 
 function getNames(){
     let inputName = document.querySelector('#nameInput').value;
     names.push(inputName);
     document.querySelector('#nameInput').value = '';
-    // sillyMessages.textContent = names;
 }
 
 
@@ -82,4 +75,5 @@ function go(){
 
 function sentenceRefreshEvent(){
     names = [];
+    sillyMessages.textContent = "Please add names."
 }
